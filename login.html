@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menshop Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Logo -->
+       <img src="image/logo.jpg" alt="Menshop Logo" class="logo"> 
+
+        <h2 class="login-title">Menshop Login</h2>
+        <form method="POST" action="login.php">
+            <input type="text" name="phone_number" class="login-input" placeholder="Phone Number or Email" required><br>
+            <input type="password" name="password" class="login-input" placeholder="Password" required><br>
+            <button type="submit" class="login-button">Sign In</button>
+        </form>
+        <div class="social-login">
+            <button class="social-button">
+                <i class="fa-brands fa-google"></i>Login with Google
+            </button>
+            <button class="social-button">
+                <i class="fa-solid fa-phone"></i>
+                Login with Phone
+            </button>
+        </div>
+
+        <div class="login-footer">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>
